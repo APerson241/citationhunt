@@ -46,7 +46,7 @@ WIKIPEDIA_WIKI_URL = WIKIPEDIA_BASE_URL + '/wiki/'
 NAMESPACE_ARTICLE = '0'
 NAMESPACE_CATEGORY = '14'
 
-CITATION_NEEDED_HTML = '<span class="citation-needed">[citation needed]</span>'
+CITATION_NEEDED_HTML = '&nbsp;<span class="citation-needed">[citation needed]</span>'
 
 def section_name_to_anchor(section):
     # See Sanitizer::escapeId

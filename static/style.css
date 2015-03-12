@@ -64,7 +64,9 @@ button:focus {
     font-size: small;
     position: relative;
     top: -5px;
+    left: -0.2em;
     color: #0645AD;
+    white-space: nowrap;
 }
 
 #buttons {
