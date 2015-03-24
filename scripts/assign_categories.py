@@ -147,7 +147,7 @@ def assign_categories(max_categories, mysql_default_cnf):
         wpcursor = wpdb.cursor()
         assert wpcursor.execute('SELECT * FROM page LIMIT 1;') == 1
         assert wpcursor.execute('SELECT * FROM categorylinks LIMIT 1;') == 1
-    except pymysql.err.InternalError as e:
+    except pymysql.err.Error as e:
         print >>sys.stderr, 'Failed to connect to MySQL database: ' + e.args[1]
         print >>sys.stderr, 'You may want to check your MySQL config file',
         print >>sys.stderr, '(currently using %s)' % mysql_default_cnf
